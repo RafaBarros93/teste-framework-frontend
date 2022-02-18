@@ -1,6 +1,6 @@
 # Teste Framework Frontend
 
-Frontend do teste para framework in [react](https://reactjs.org/)
+Frontend do teste para framework in [react](https://reactjs.org/) with [vite](https://vitejs.dev/)
 
 ## Installation
 
