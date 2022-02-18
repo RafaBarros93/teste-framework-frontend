@@ -33,12 +33,12 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
-        <div>
+        <div className="App-div">
           <label>
             Valor:
             <input type="number" value={number} onChange={handlerValue} />
           </label>
-          <button onClick={getDivisibleNumbers}>Gerar </button>
+          <button onClick={getDivisibleNumbers}>Gerar</button>
         </div>
         {divisibleNumbers.length > 0 && (
           <div>

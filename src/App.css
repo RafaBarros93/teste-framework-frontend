@@ -4,12 +4,14 @@
 
 .App-logo {
   height: 10vmin;
- 
+  padding-bottom: 5rem;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+
   }
 }
 
@@ -30,5 +32,9 @@
 
 
 button {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(1px + 2vmin);
+}
+
+input {
+  font-size: calc(1px + 2vmin);
 }
