@@ -20,13 +20,14 @@ function App() {
     setDivisibleNumbers(divisibleNumbers)
   }
 
-  const handlerValue = ({target: {value}}) => {
-    console.log('vale', value)
-
-    setNumber(value)
+  const claerNumbers = async () => {
+    setPrimeNumbers(0)
+    setDivisibleNumbers(0)
   }
 
-  console.log('val::', number)
+  const handlerValue = ({target: {value}}) => {
+    setNumber(value)
+  }
 
   return (
     <div className="App">
@@ -39,6 +40,7 @@ function App() {
             <input type="number" value={number} onChange={handlerValue} />
           </label>
           <button onClick={getDivisibleNumbers}>Gerar</button>
+          <button onClick={claerNumbers}>Limpar</button>
         </div>
         {divisibleNumbers.length > 0 && (
           <div>
