@@ -20,9 +20,10 @@ function App() {
     setDivisibleNumbers(divisibleNumbers)
   }
 
-  const claerNumbers = async () => {
+  const clearNumbers = async () => {
     setPrimeNumbers(0)
     setDivisibleNumbers(0)
+    setNumber(0)
   }
 
   const handlerValue = ({target: {value}}) => {
@@ -40,7 +41,7 @@ function App() {
             <input type="number" value={number} onChange={handlerValue} />
           </label>
           <button onClick={getDivisibleNumbers}>Gerar</button>
-          <button onClick={claerNumbers}>Limpar</button>
+          <button onClick={clearNumbers}>Limpar</button>
         </div>
         {divisibleNumbers.length > 0 && (
           <div>
