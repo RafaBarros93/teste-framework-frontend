@@ -10,7 +10,7 @@ function App() {
   const [number, setNumber] = useState(0)
 
   const getDivisibleNumbers = async () => {
-    let {data} = await axios.post('http://localhost:3002/api/divisible-number', {number})
+    let {data} = await axios.post('https://teste-framework.herokuapp.com/api/divisible-number', {number})
 
     let primeNumbers = data.filter(number => number.primos)
 
